@@ -11,7 +11,7 @@ public class PacketEnchantmentTypes {
 
     @ApiStatus.Experimental @ApiStatus.Internal
     static PacketEnchantmentType getEnchantmentType(String string) {
-        return TYPE.getByString(string);
+        return TYPE.getEnchantmentTypeByString(string);
     }
 
     public static final PacketEnchantmentType SWIFT_SNEAK = getEnchantmentType("swift_sneak");
@@ -22,4 +22,5 @@ public class PacketEnchantmentTypes {
     public static final PacketEnchantmentType SOUL_SPEED = getEnchantmentType("soul_speed");
     public static final PacketEnchantmentType DEPTH_STRIDER = getEnchantmentType("depth_strider");
     public static final PacketEnchantmentType KNOCKBACK = getEnchantmentType("knockback");
+    public static final PacketEnchantmentType BINDING_CURSE = getEnchantmentType("binding_curse");
 }

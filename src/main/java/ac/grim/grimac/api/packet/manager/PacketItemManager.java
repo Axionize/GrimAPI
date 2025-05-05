@@ -10,4 +10,6 @@ public interface PacketItemManager {
     PacketItemTypeManager getItemTypeManager();
 
     PacketEnchantmentManager getEnchantmentManager();
+
+    PacketComponentManager getComponentManager();
 }

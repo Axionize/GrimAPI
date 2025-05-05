@@ -203,6 +203,6 @@ public class PacketItemTypes {
 
     @ApiStatus.Experimental @ApiStatus.Internal
     static PacketItemType getPacketItemTypeFromString(String string) {
-        return TYPE.getByString(string);
+        return TYPE.getItemTypeByString(string);
     }
 }
