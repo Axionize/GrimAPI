@@ -3,7 +3,6 @@ package ac.grim.grimac.api.math;
 import ac.grim.grimac.api.platform.world.PlatformWorld;
 import lombok.Getter;
 import lombok.Setter;
-import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -11,7 +10,6 @@ import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 import java.util.Objects;
 
-@ApiStatus.Experimental
 public class Location implements Cloneable {
     private Reference<PlatformWorld> world;
     @Getter

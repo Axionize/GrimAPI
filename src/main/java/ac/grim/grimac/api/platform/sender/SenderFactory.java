@@ -1,9 +1,11 @@
 package ac.grim.grimac.api.platform.sender;
 
 import net.kyori.adventure.text.Component;
+import org.checkerframework.checker.nullness.qual.NonNull;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -12,27 +14,33 @@ import java.util.UUID;
  * @param <T> the command sender type
  */
 @ApiStatus.Experimental
-public interface SenderFactory<T> {
-    UUID getUniqueId(T sender);
+public abstract class SenderFactory<T> {
+    protected abstract UUID getUniqueId(T sender);
 
-    String getName(T sender);
+    protected abstract String getName(T sender);
 
-    void sendMessage(T sender, String message);
+    protected abstract void sendMessage(T sender, String message);
 
-    void sendMessage(T sender, Component message);
+    protected abstract void sendMessage(T sender, Component message);
 
-    boolean hasPermission(T sender, String node);
+    protected abstract boolean hasPermission(T sender, String node);
 
-    boolean hasPermission(T sender, String node, boolean defaultIfUnset);
+    protected abstract boolean hasPermission(T sender, String node, boolean defaultIfUnset);
 
-    void performCommand(T sender, String command);
+    protected abstract void performCommand(T sender, String command);
 
-    boolean isConsole(T sender);
+    protected abstract boolean isConsole(T sender);
 
-    boolean isPlayer(T sender);
+    protected abstract boolean isPlayer(T sender);
 
-    @NotNull Sender wrap(@NotNull T sender);
+    public final @NonNull Sender wrap(@NonNull T sender) {
+        Objects.requireNonNull(sender, "sender");
+        return new AbstractSender<>(this, sender);
+    }
 
     @SuppressWarnings("unchecked")
-    @NotNull T unwrap(@NotNull Sender sender);
+    public final @NonNull T unwrap(@NonNull Sender sender) {
+        Objects.requireNonNull(sender, "sender");
+        return (T) sender.getNativeSender();
+    }
 }

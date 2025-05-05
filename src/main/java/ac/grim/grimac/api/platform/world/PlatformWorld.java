@@ -9,7 +9,7 @@ import java.util.UUID;
 public interface PlatformWorld {
     boolean isChunkLoaded(int chunkX, int chunkZ);
 
-    int getBlockIDAt(int x, int y, int z);
+    boolean isAirAt(int x, int y, int z);
 
     String getName();
 

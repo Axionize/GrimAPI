@@ -1,7 +1,7 @@
 package ac.grim.grimac.api.platform.player;
 
 import ac.grim.grimac.api.math.Vector3dm;
-import ac.grim.grimac.api.platform.GrimEntity;
+import ac.grim.grimac.api.platform.entity.GrimEntity;
 import ac.grim.grimac.api.platform.sender.Sender;
 import net.kyori.adventure.text.Component;
 import org.jetbrains.annotations.ApiStatus;
@@ -35,9 +35,9 @@ public interface PlatformPlayer extends GrimEntity {
 
     @Nullable GrimEntity getVehicle();
 
-    GameMode getGameMode();
+    int getGameModeID();
 
-    void setGameMode(GameMode gameMode);
+    void setGameMode(int gameModeID);
 
     boolean isExternalPlayer();
 

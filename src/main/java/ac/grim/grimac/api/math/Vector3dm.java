@@ -1,12 +1,10 @@
 package ac.grim.grimac.api.math;
 
-import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
 import java.util.Random;
 
-@ApiStatus.Experimental
 public class Vector3dm implements Cloneable, Serializable {
     private static final long serialVersionUID = -2657651106777219169L;
     private static final Random random = new Random();

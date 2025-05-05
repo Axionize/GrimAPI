@@ -1,4 +1,4 @@
-package ac.grim.grimac.api.platform;
+package ac.grim.grimac.api.platform.entity;
 
 import ac.grim.grimac.api.math.Location;
 import ac.grim.grimac.api.platform.world.PlatformWorld;
