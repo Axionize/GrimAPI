@@ -1,5 +1,7 @@
 package ac.grim.grimac.api;
 
+import org.jetbrains.annotations.ApiStatus;
+
 import java.util.concurrent.CompletableFuture;
 
 public final class GrimAPIProvider {
@@ -52,5 +54,10 @@ public final class GrimAPIProvider {
             return CompletableFuture.completedFuture(instance);
         }
         return futureInstance;
+    }
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    public static GrimAbstractAPI getDirect() {
+        return instance;
     }
 }
