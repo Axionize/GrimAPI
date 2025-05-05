@@ -5,4 +5,14 @@ public interface PacketStateType {
     float getHardness();
 
     PacketItemType getTypePlacingState();
+
+    float getBlastResistance();
+
+    String getName();
+
+    boolean isSolid();
+
+    boolean exceedsCube();
+
+    boolean isBlocking();
 }

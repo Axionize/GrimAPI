@@ -8,4 +8,6 @@ public interface PacketItemManager {
     PacketItemStack.Builder getBuilder();
 
     PacketItemTypeManager getItemTypeManager();
+
+    PacketEnchantmentManager getEnchantmentManager();
 }

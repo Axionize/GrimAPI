@@ -1,6 +1,7 @@
 package ac.grim.grimac.api.packet.item;
 
 import ac.grim.grimac.api.GrimAPIProvider;
+import ac.grim.grimac.api.packet.component.PacketComponentType;
 import ac.grim.grimac.api.packet.manager.PacketItemManager;
 import org.jetbrains.annotations.ApiStatus;
 
@@ -44,6 +45,8 @@ public interface PacketItemStack {
     Optional<?> getComponent(PacketComponentType<Object> equippable);
 
     int getEnchantmentLevel(PacketEnchantmentType enchantmentType, int protocolVersion);
+
+    int getLegacyData();
 
     interface Builder {
         Builder type(String name);
