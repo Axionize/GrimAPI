@@ -1,4 +1,4 @@
-import versioning.BuildFlags // Assuming these helpers are compatible
+import versioning.BuildConfig // Assuming these helpers are compatible
 import versioning.VersionUtil // Assuming these helpers are compatible
 import org.gradle.api.JavaVersion
 import java.util.Properties
@@ -9,7 +9,7 @@ plugins {
     id("net.kyori.indra.git") version "3.1.3" // Keep for Git info access
 }
 
-BuildFlags.init(project) // Initialize your build flags helper
+BuildConfig.init(project) // Initialize your build flags helper
 
 /**
  * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -82,10 +82,10 @@ val baseVersion = "1.2.0.0" // Example starting version for Epoch 1
 // --- Standard Project Configuration ---
 group = "ac.grim.grimac" // Or your desired group ID
 // VersionUtil appends commit/branch metadata if not a release build
-version = VersionUtil.compute(baseVersion)
+version = VersionUtil.computeVersion(baseVersion)
 description = "GrimAPI"
 
-println("⚙️  Build flags     → release=${BuildFlags.release}")
+println("⚙️  Build flags     → release=${BuildConfig.release}")
 println("📦 Project version → $version")
 
 // --- Java Configuration ---
