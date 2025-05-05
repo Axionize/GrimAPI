@@ -36,8 +36,6 @@ public interface PacketItemStack {
 
     PacketItemType getType();
 
-    boolean is(PacketItemType packetItemType);
-
     boolean isDamaged();
 
     boolean hasComponent(PacketComponentType<?> glider);

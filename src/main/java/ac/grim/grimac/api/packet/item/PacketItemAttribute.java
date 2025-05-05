@@ -1,15 +1,19 @@
 package ac.grim.grimac.api.packet.item;
 
-public interface PacketItemAttribute {
-    PacketItemAttribute AXE = null;
-    PacketItemAttribute PICKAXE = null;
-    PacketItemAttribute SHOVEL = null;
-    PacketItemAttribute WOOD_TIER = null;
-    PacketItemAttribute HOE = null;
-    PacketItemAttribute STONE_TIER = null;
-    PacketItemAttribute IRON_TIER = null;
-    PacketItemAttribute DIAMOND_TIER = null;
-    PacketItemAttribute GOLD_TIER =  null;
-    PacketItemAttribute NETHERITE_TIER = null;
-    PacketItemAttribute EDIBLE = null;
+public enum PacketItemAttribute {
+    MUSIC_DISC,
+    EDIBLE,
+    FIRE_RESISTANT,
+    WOOD_TIER,
+    STONE_TIER,
+    IRON_TIER,
+    DIAMOND_TIER,
+    GOLD_TIER,
+    NETHERITE_TIER,
+    FUEL,
+    SWORD,
+    SHOVEL,
+    AXE,
+    PICKAXE,
+    HOE;
 }

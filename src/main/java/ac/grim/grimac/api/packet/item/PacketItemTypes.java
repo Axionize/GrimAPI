@@ -195,6 +195,11 @@ public class PacketItemTypes {
     public static final PacketItemType CHORUS_FRUIT = getPacketItemTypeFromString("chorus_fruit");
     public static final PacketItemType SPYGLASS = getPacketItemTypeFromString("spyglass");
     public static final PacketItemType GOAT_HORN = getPacketItemTypeFromString("goat_horn");
+    public static final PacketItemType BONE_MEAL = getPacketItemTypeFromString("bone_meal");
+    public static final PacketItemType GLOWSTONE = getPacketItemTypeFromString("glowstone");
+    public static final PacketItemType DEBUG_STICK = getPacketItemTypeFromString("debug_stick");
+    public static final PacketItemType MACE = getPacketItemTypeFromString("mace");
+    public static final PacketItemType SHEARS = getPacketItemTypeFromString("shears");
 
     @ApiStatus.Experimental @ApiStatus.Internal
     static PacketItemType getPacketItemTypeFromString(String string) {
