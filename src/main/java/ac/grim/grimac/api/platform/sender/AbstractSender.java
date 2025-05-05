@@ -101,6 +101,6 @@ public final class AbstractSender<T> implements Sender {
 
     @Override
     public @Nullable PlatformPlayer getPlatformPlayer() {
-        return GrimAPIProvider.getDirect().getPlatformPlayerFactory().getFromUUID(this.getUniqueId());
+        return GrimAPIProvider.getDirect().getPlatformLoader().getPlatformPlayerFactory().getFromUUID(this.getUniqueId());
     }
 }

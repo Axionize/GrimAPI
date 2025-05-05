@@ -1,5 +1,6 @@
 package ac.grim.grimac.api.platform;
 
+import ac.grim.grimac.api.packet.manager.PacketItemManager;
 import ac.grim.grimac.api.plugin.GrimPlugin;
 import ac.grim.grimac.api.platform.manager.*;
 import ac.grim.grimac.api.platform.player.PlatformPlayerFactory;
@@ -42,4 +43,6 @@ public interface PlatformLoader {
     MessagePlaceHolderManager getMessagePlaceHolderManager();
 
     PermissionRegistrationManager getPermissionManager();
+
+    PacketItemManager getPacketItemManager();
 }

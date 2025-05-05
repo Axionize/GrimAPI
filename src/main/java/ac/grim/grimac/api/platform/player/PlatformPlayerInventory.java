@@ -1,6 +1,6 @@
 package ac.grim.grimac.api.platform.player;
 
-import ac.grim.grimac.api.platform.item.PacketItemStack;
+import ac.grim.grimac.api.packet.item.PacketItemStack;
 import org.jetbrains.annotations.ApiStatus;
 
 @ApiStatus.Experimental

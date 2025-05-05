@@ -5,11 +5,8 @@ import ac.grim.grimac.api.common.BasicReloadable;
 import ac.grim.grimac.api.config.ConfigManager;
 import ac.grim.grimac.api.config.ConfigReloadable;
 import ac.grim.grimac.api.event.EventBus;
-import ac.grim.grimac.api.platform.item.PacketItemStack;
-import ac.grim.grimac.api.platform.player.PlatformPlayerFactory;
-import ac.grim.grimac.api.platform.scheduler.PlatformScheduler;
-import ac.grim.grimac.api.plugin.GrimPlugin;
-import org.jetbrains.annotations.ApiStatus;
+import ac.grim.grimac.api.platform.Platform;
+import ac.grim.grimac.api.platform.PlatformLoader;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -102,15 +99,7 @@ public interface GrimAbstractAPI extends ConfigReloadable, BasicReloadable {
      */
     int getCurrentTick();
 
-    @ApiStatus.Experimental @ApiStatus.Internal
-    PacketItemStack.Builder getPacketItemBuilder();
+    PlatformLoader getPlatformLoader();
 
-    @ApiStatus.Experimental @ApiStatus.Internal
-    PlatformScheduler getScheduler();
-
-    @ApiStatus.Experimental @ApiStatus.Internal
-    GrimPlugin getMainGrimPlugin();
-
-    @ApiStatus.Experimental @ApiStatus.Internal
-    PlatformPlayerFactory getPlatformPlayerFactory();
+    Platform getPlatform();
 }

@@ -5,7 +5,6 @@ import java.util.Properties
 
 plugins {
     java
-    `java-library`
     `maven-publish`
     id("net.kyori.indra.git") version "3.1.3" // Keep for Git info access
 }
@@ -141,7 +140,6 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.36")
     compileOnly("net.kyori:adventure-text-minimessage:4.21.0")
     compileOnly("org.incendo:cloud-core:2.0.0")
-
     annotationProcessor("org.projectlombok:lombok:1.18.36")
     testCompileOnly("org.projectlombok:lombok:1.18.36")
     testAnnotationProcessor("org.projectlombok:lombok:1.18.36")
