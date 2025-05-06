@@ -5,7 +5,7 @@ import ac.grim.grimac.api.config.ConfigReloadable;
 import ac.grim.grimac.api.data.world.ICompensatedWorld;
 import ac.grim.grimac.api.feature.FeatureManager;
 import ac.grim.grimac.api.handler.UserHandlerHolder;
-import ac.grim.grimac.api.util.ILatencyUtils;
+import ac.grim.grimac.api.platform.player.PlatformPlayer;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 
@@ -89,4 +89,13 @@ public interface GrimUser extends ConfigReloadable, BasicReloadable, UserHandler
 
     @ApiStatus.Experimental @ApiStatus.Internal
     ICompensatedWorld getCompensatedWorld();
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    boolean isGrimDisabled();
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    @Nullable PlatformPlayer getPlatformPlayer();
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    void onEndOfTick();
 }

@@ -1,6 +1,6 @@
 package ac.grim.grimac.api.data;
 
-import ac.grim.grimac.api.data.boxes.ISCB;
+import ac.grim.grimac.api.data.boxes.BaseSCB;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ public class PistonData {
     public int ticksOfPistonBeingAlive = 0;
 
     // The actual blocks pushed by the piston, plus the piston head itself
-    public List<ISCB> boxes;
+    public List<BaseSCB> boxes;
 
-    public PistonData(IBlockFace direction, List<ISCB> pushedBlocks, int lastTransactionSent, boolean isPush, boolean hasSlimeBlock, boolean hasHoneyBlock) {
+    public PistonData(IBlockFace direction, List<BaseSCB> pushedBlocks, int lastTransactionSent, boolean isPush, boolean hasSlimeBlock, boolean hasHoneyBlock) {
         this.direction = direction;
         this.boxes = pushedBlocks;
         this.lastTransactionSent = lastTransactionSent;

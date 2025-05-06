@@ -15,5 +15,7 @@ public class PacketComponentTypes {
     }
 
 
-    public static final PacketComponentType<PacketItemUseCooldown> USE_COOLDOWN = (PacketComponentType<PacketItemUseCooldown>) getComponentByName("use_cooldown");
+    public static final PacketComponentType<PacketComponentItemUseCooldown> USE_COOLDOWN = (PacketComponentType<PacketComponentItemUseCooldown>) getComponentByName("use_cooldown");
+    public static final PacketComponentType<PacketComponentDummy> GLIDER = (PacketComponentType<PacketComponentDummy>) getComponentByName("glider");
+    public static final PacketComponentType<PacketComponentItemEquippable> EQUIPPABLE = (PacketComponentType<PacketComponentItemEquippable>) getComponentByName("equippable");
 }
