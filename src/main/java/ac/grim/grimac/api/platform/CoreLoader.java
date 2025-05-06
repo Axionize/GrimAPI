@@ -21,9 +21,6 @@ public interface CoreLoader {
 
     void stop();
 
-    /* =========================================================
-       Static helpers so platform code never touches ServiceLoader
-       ========================================================= */
     class Manager {
         private static final List<CoreLoader> LOADED = new ArrayList<>();
 

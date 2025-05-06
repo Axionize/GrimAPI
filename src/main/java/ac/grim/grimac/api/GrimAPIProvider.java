@@ -6,6 +6,7 @@ import java.util.concurrent.CompletableFuture;
 
 public final class GrimAPIProvider {
     private static GrimAbstractAPI instance;
+    private boolean finishedLoading;
     private static final CompletableFuture<GrimAbstractAPI> futureInstance = new CompletableFuture<>();
 
     private GrimAPIProvider() {

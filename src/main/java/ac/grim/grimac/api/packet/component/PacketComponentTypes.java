@@ -14,7 +14,6 @@ public class PacketComponentTypes {
         return TYPE.getComponentTypeFromString(string);
     }
 
-
     public static final PacketComponentType<PacketComponentItemUseCooldown> USE_COOLDOWN = (PacketComponentType<PacketComponentItemUseCooldown>) getComponentByName("use_cooldown");
     public static final PacketComponentType<PacketComponentDummy> GLIDER = (PacketComponentType<PacketComponentDummy>) getComponentByName("glider");
     public static final PacketComponentType<PacketComponentItemEquippable> EQUIPPABLE = (PacketComponentType<PacketComponentItemEquippable>) getComponentByName("equippable");
