@@ -2,9 +2,11 @@ package ac.grim.grimac.api.platform.command;
 
 import org.incendo.cloud.context.CommandContext;
 import org.incendo.cloud.parser.ParserDescriptor;
+import org.jetbrains.annotations.ApiStatus;
 
 import java.util.concurrent.CompletableFuture;
 
+@ApiStatus.Experimental
 public abstract class AbstractPlayerSelectorParser<C> {
 
     public abstract ParserDescriptor<C, PlayerSelector> descriptor();

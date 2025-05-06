@@ -2,9 +2,10 @@ package ac.grim.grimac.api.packet.item;
 
 import ac.grim.grimac.api.GrimAPIProvider;
 import ac.grim.grimac.api.packet.component.PacketComponentType;
-import ac.grim.grimac.api.packet.component.PacketItemUseCooldown;
 import ac.grim.grimac.api.packet.manager.PacketItemManager;
+import ac.grim.grimac.api.packet.nbt.PacketNBTCompound;
 import org.jetbrains.annotations.ApiStatus;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
@@ -48,6 +49,8 @@ public interface PacketItemStack {
     int getLegacyData();
 
     <T> T getComponentOr(PacketComponentType<T> type, T defaultValue);
+
+    @Nullable PacketNBTCompound getNBT();
 
     interface Builder {
         Builder type(String name);

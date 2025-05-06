@@ -2,8 +2,11 @@ package ac.grim.grimac.api;
 
 import ac.grim.grimac.api.common.BasicReloadable;
 import ac.grim.grimac.api.config.ConfigReloadable;
+import ac.grim.grimac.api.data.world.ICompensatedWorld;
 import ac.grim.grimac.api.feature.FeatureManager;
 import ac.grim.grimac.api.handler.UserHandlerHolder;
+import ac.grim.grimac.api.util.ILatencyUtils;
+import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Collection;
@@ -83,4 +86,7 @@ public interface GrimUser extends ConfigReloadable, BasicReloadable, UserHandler
     void sendMessage(String message);
 
     boolean hasPermission(String permission);
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    ICompensatedWorld getCompensatedWorld();
 }

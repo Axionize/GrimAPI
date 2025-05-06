@@ -141,6 +141,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.36")
     compileOnly("net.kyori:adventure-text-minimessage:4.21.0")
     compileOnly("org.incendo:cloud-core:2.0.0")
+    compileOnly("it.unimi.dsi:fastutil:8.5.15")
 
     annotationProcessor("org.projectlombok:lombok:1.18.36")
     testCompileOnly("org.projectlombok:lombok:1.18.36")

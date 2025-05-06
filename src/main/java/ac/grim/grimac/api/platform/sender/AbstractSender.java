@@ -5,6 +5,7 @@ import ac.grim.grimac.api.platform.player.PlatformPlayer;
 import net.kyori.adventure.text.Component;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
+import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
@@ -14,6 +15,7 @@ import java.util.UUID;
  *
  * @param <T> the command sender type
  */
+@ApiStatus.Experimental
 public final class AbstractSender<T> implements Sender {
     private final SenderFactory<T> factory;
     private final T sender;

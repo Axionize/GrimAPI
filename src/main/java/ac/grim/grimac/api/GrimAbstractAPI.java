@@ -7,9 +7,12 @@ import ac.grim.grimac.api.config.ConfigReloadable;
 import ac.grim.grimac.api.event.EventBus;
 import ac.grim.grimac.api.platform.Platform;
 import ac.grim.grimac.api.platform.PlatformLoader;
+import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Collection;
+import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
@@ -27,6 +30,9 @@ public interface GrimAbstractAPI extends ConfigReloadable, BasicReloadable {
      * @return GrimUser
      */
     @Nullable GrimUser getGrimUser(UUID uuid);
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    Collection<GrimUser> getGrimUsers();
 
     /**
      * Used to create or replace variables, such as %player%. This only works
@@ -99,7 +105,15 @@ public interface GrimAbstractAPI extends ConfigReloadable, BasicReloadable {
      */
     int getCurrentTick();
 
+    @ApiStatus.Experimental @ApiStatus.Internal
     PlatformLoader getPlatformLoader();
 
+    @ApiStatus.Experimental @ApiStatus.Internal
     Platform getPlatform();
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    Map<String, Function<GrimUser, String>> getVariableReplacements();
+
+    @ApiStatus.Experimental @ApiStatus.Internal
+    Map<String, String> getStaticReplacements();
 }

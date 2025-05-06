@@ -4,6 +4,8 @@ import ac.grim.grimac.api.GrimAPIProvider;
 import ac.grim.grimac.api.packet.manager.PacketItemTypeManager;
 import org.jetbrains.annotations.ApiStatus;
 
+import java.util.Collection;
+
 public class PacketItemTypes {
     @ApiStatus.Experimental @ApiStatus.Internal
     private static final PacketItemTypeManager TYPE = GrimAPIProvider.getDirect().getPlatformLoader().getPacketItemManager().getItemTypeManager();
@@ -200,9 +202,19 @@ public class PacketItemTypes {
     public static final PacketItemType DEBUG_STICK = getPacketItemTypeFromString("debug_stick");
     public static final PacketItemType MACE = getPacketItemTypeFromString("mace");
     public static final PacketItemType SHEARS = getPacketItemTypeFromString("shears");
+    public static final PacketItemType DEAD_BUSH = getPacketItemTypeFromString("dead_bush");
+    public static final PacketItemType CHORUS_PLANT = getPacketItemTypeFromString("chorus_plant");
+    public static final PacketItemType CHORUS_FLOWER = getPacketItemTypeFromString("chorus_flower");
+    public static final PacketItemType TORCHFLOWER_SEEDS = getPacketItemTypeFromString("torchflower_seeds");
+    public static final PacketItemType LIGHTNING_ROD = getPacketItemTypeFromString("lightning_rod");
+    public static final PacketItemType SNOW = getPacketItemTypeFromString("snow");
 
     @ApiStatus.Experimental @ApiStatus.Internal
     static PacketItemType getPacketItemTypeFromString(String string) {
         return TYPE.getItemTypeByString(string);
+    }
+
+    public static Collection<PacketItemType> values() {
+        return TYPE.values();
     }
 }
