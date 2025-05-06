@@ -1,5 +1,7 @@
 package ac.grim.grimac.api.packet.component;
 
-public interface PacketComponentItemEquippable {
+import ac.grim.grimac.api.packet.inventory.PacketEquipmentSlot;
 
+public interface PacketComponentItemEquippable {
+    PacketEquipmentSlot getSlot();
 }

@@ -42,7 +42,7 @@ public interface PacketItemStack {
 
     boolean hasComponent(PacketComponentType<?> glider);
 
-    Optional<?> getComponent(PacketComponentType<Object> equippable);
+    <T> Optional<T> getComponent(PacketComponentType<T> equippable);
 
     int getEnchantmentLevel(PacketEnchantmentType enchantmentType, int protocolVersion);
 
