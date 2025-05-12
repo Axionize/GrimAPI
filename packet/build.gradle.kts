@@ -141,7 +141,6 @@ dependencies {
     compileOnly("net.kyori:adventure-text-minimessage:4.21.0")
     compileOnly("org.incendo:cloud-core:2.0.0")
     compileOnly("com.github.retrooper:packetevents-api:2.8.0-SNAPSHOT")
-    compileOnly(project(":api"))
     annotationProcessor("org.projectlombok:lombok:1.18.36")
     testCompileOnly("org.projectlombok:lombok:1.18.36")
     testAnnotationProcessor("org.projectlombok:lombok:1.18.36")

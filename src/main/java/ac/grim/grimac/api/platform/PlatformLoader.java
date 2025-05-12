@@ -1,7 +1,7 @@
 package ac.grim.grimac.api.platform;
 
-import ac.grim.grimac.api.packet.manager.PacketItemManager;
-import ac.grim.grimac.api.platform.init.Initable;
+import ac.grim.grimac.api.GrimAbstractAPI;
+import ac.grim.grimac.api.packet.MCPacketAPI;
 import ac.grim.grimac.api.plugin.GrimPlugin;
 import ac.grim.grimac.api.platform.manager.*;
 import ac.grim.grimac.api.platform.player.PlatformPlayerFactory;
@@ -36,7 +36,7 @@ public interface PlatformLoader {
 
     // Intended for use for platform specific service/API bringup
     // Method will be called when InitManager.load() is called
-    void registerAPIService();
+    void registerAPIService(GrimAbstractAPI api);
 
     // Used to replace text placeholders in messages
     // Currently only supports PlaceHolderAPI on Bukkit
@@ -45,5 +45,5 @@ public interface PlatformLoader {
 
     PermissionRegistrationManager getPermissionManager();
 
-    PacketItemManager getPacketItemManager();
+    MCPacketAPI getMCPacketAPI();
 }

@@ -1,13 +1,13 @@
 package ac.grim.grimac.api.packet.component;
 
-import ac.grim.grimac.api.GrimAPIProvider;
+import ac.grim.grimac.api.packet.MCPacket;
 import ac.grim.grimac.api.packet.manager.PacketComponentManager;
 import org.jetbrains.annotations.ApiStatus;
 
 public class PacketComponentTypes {
     @ApiStatus.Experimental
     @ApiStatus.Internal
-    private static final PacketComponentManager TYPE = GrimAPIProvider.getDirect().getPlatformLoader().getPacketItemManager().getComponentManager();
+    private static final PacketComponentManager TYPE = MCPacket.getAPI().getItemManager().getComponentManager();
 
     @ApiStatus.Experimental @ApiStatus.Internal
     static PacketComponentType<?> getComponentByName(String string) {

@@ -1,10 +1,11 @@
-package ac.grim.grimac.packet.api.impl.pe;
+package ac.grim.grimac.api.packet.impl.pe.item;
 
 import ac.grim.grimac.api.packet.item.PacketItemStack;
 import ac.grim.grimac.api.packet.manager.PacketComponentManager;
 import ac.grim.grimac.api.packet.manager.PacketEnchantmentManager;
 import ac.grim.grimac.api.packet.manager.PacketItemManager;
 import ac.grim.grimac.api.packet.manager.PacketItemTypeManager;
+import com.github.retrooper.packetevents.protocol.item.ItemStack;
 
 public class PEItemManager implements PacketItemManager {
 
@@ -12,10 +13,9 @@ public class PEItemManager implements PacketItemManager {
     private final PacketEnchantmentManager peEnchantManager = new PEEnchantManager();
     private final PacketComponentManager peComponentManager = new PEComponentManager();
 
-
     @Override
     public PacketItemStack getEmptyStack() {
-        return PacketItemStack.EMPTY;
+        return ItemStack.EMPTY;
     }
 
     @Override

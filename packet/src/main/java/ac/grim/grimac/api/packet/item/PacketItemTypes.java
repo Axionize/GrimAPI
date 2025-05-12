@@ -1,6 +1,6 @@
 package ac.grim.grimac.api.packet.item;
 
-import ac.grim.grimac.api.GrimAPIProvider;
+import ac.grim.grimac.api.packet.MCPacket;
 import ac.grim.grimac.api.packet.manager.PacketItemTypeManager;
 import org.jetbrains.annotations.ApiStatus;
 
@@ -8,7 +8,7 @@ import java.util.Collection;
 
 public class PacketItemTypes {
     @ApiStatus.Experimental @ApiStatus.Internal
-    private static final PacketItemTypeManager TYPE = GrimAPIProvider.getDirect().getPlatformLoader().getPacketItemManager().getItemTypeManager();
+    private static final PacketItemTypeManager TYPE = MCPacket.getAPI().getItemManager().getItemTypeManager();
 
     public static final PacketItemType AIR = getPacketItemTypeFromString("air");
     public static final PacketItemType LIGHT = getPacketItemTypeFromString("light");

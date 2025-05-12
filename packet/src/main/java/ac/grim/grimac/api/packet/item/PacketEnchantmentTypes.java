@@ -1,13 +1,13 @@
 package ac.grim.grimac.api.packet.item;
 
-import ac.grim.grimac.api.GrimAPIProvider;
+import ac.grim.grimac.api.packet.MCPacket;
 import ac.grim.grimac.api.packet.manager.PacketEnchantmentManager;
 import org.jetbrains.annotations.ApiStatus;
 
 public class PacketEnchantmentTypes {
     @ApiStatus.Experimental
     @ApiStatus.Internal
-    private static final PacketEnchantmentManager TYPE = GrimAPIProvider.getDirect().getPlatformLoader().getPacketItemManager().getEnchantmentManager();
+    private static final PacketEnchantmentManager TYPE = MCPacket.getAPI().getItemManager().getEnchantmentManager();
 
     @ApiStatus.Experimental @ApiStatus.Internal
     static PacketEnchantmentType getEnchantmentType(String string) {

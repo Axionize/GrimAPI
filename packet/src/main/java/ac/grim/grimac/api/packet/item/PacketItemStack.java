@@ -1,6 +1,7 @@
 package ac.grim.grimac.api.packet.item;
 
-import ac.grim.grimac.api.GrimAPIProvider;
+
+import ac.grim.grimac.api.packet.MCPacket;
 import ac.grim.grimac.api.packet.component.PacketComponentType;
 import ac.grim.grimac.api.packet.manager.PacketItemManager;
 import ac.grim.grimac.api.packet.nbt.PacketNBTCompound;
@@ -11,7 +12,7 @@ import java.util.Optional;
 
 @ApiStatus.Experimental
 public interface PacketItemStack {
-    PacketItemManager ITEM = GrimAPIProvider.getDirect().getPlatformLoader().getPacketItemManager();
+    PacketItemManager ITEM = MCPacket.getAPI().getItemManager();
     PacketItemStack EMPTY = ITEM.getEmptyStack();
 
     boolean isSameItemSameTags(PacketItemStack packetItemStack);
