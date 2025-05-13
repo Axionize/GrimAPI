@@ -5,7 +5,6 @@ import ac.grim.grimac.api.packet.manager.PacketComponentManager;
 import ac.grim.grimac.api.packet.manager.PacketEnchantmentManager;
 import ac.grim.grimac.api.packet.manager.PacketItemManager;
 import ac.grim.grimac.api.packet.manager.PacketItemTypeManager;
-import com.github.retrooper.packetevents.protocol.item.ItemStack;
 
 public class PEItemManager implements PacketItemManager {
 
@@ -15,7 +14,7 @@ public class PEItemManager implements PacketItemManager {
 
     @Override
     public PacketItemStack getEmptyStack() {
-        return ItemStack.EMPTY;
+        return PacketItemStack.EMPTY;
     }
 
     @Override
