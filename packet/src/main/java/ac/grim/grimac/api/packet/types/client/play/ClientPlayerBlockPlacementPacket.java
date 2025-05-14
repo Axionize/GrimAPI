@@ -9,7 +9,7 @@ import ac.grim.grimac.api.packet.world.enums.BlockFace;
 import java.util.Optional;
 
 public interface ClientPlayerBlockPlacementPacket extends SendablePacket {
-    BlockFace getFace();
+    BlockFace blockFace();
     Optional<PacketItemStack> getItemStack();
     int getSequence();
     ImmutableVector3i getBlockPosition();
