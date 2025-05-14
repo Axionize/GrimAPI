@@ -1,6 +1,7 @@
 package ac.grim.grimac.api.data;
 
 import ac.grim.grimac.api.data.boxes.BaseSCB;
+import ac.grim.grimac.api.packet.world.enums.BlockFace;
 
 import java.util.List;
 
@@ -8,7 +9,7 @@ public class PistonData {
     public final boolean isPush;
     public final boolean hasSlimeBlock;
     public final boolean hasHoneyBlock;
-    public final IBlockFace direction;
+    public final BlockFace direction;
     public final int lastTransactionSent;
 
     // Calculate if the player has no-push, and when to end the possibility of applying piston
@@ -17,7 +18,7 @@ public class PistonData {
     // The actual blocks pushed by the piston, plus the piston head itself
     public List<BaseSCB> boxes;
 
-    public PistonData(IBlockFace direction, List<BaseSCB> pushedBlocks, int lastTransactionSent, boolean isPush, boolean hasSlimeBlock, boolean hasHoneyBlock) {
+    public PistonData(BlockFace direction, List<BaseSCB> pushedBlocks, int lastTransactionSent, boolean isPush, boolean hasSlimeBlock, boolean hasHoneyBlock) {
         this.direction = direction;
         this.boxes = pushedBlocks;
         this.lastTransactionSent = lastTransactionSent;
