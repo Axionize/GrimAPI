@@ -5,6 +5,7 @@ import ac.grim.grimac.api.packet.manager.PacketBlockStateManager;
 import ac.grim.grimac.api.packet.manager.PacketItemManager;
 import ac.grim.grimac.api.packet.manager.PacketStateTypeManager;
 import ac.grim.grimac.api.packet.types.PacketWrapperFactory;
+import ac.grim.grimac.api.packet.version.VersionManager;
 
 public interface MCPacketAPI {
     PacketItemManager getItemManager();
@@ -12,4 +13,5 @@ public interface MCPacketAPI {
     PacketBlockStateManager getBlockStateManager();
     PacketStateTypeManager getStateTypeManager();
     PacketWrapperFactory packetFactory();
+    VersionManager getVersionManager();
 }
