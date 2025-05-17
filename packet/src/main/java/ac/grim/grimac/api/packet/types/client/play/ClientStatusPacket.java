@@ -3,7 +3,7 @@ package ac.grim.grimac.api.packet.types.client.play;
 import ac.grim.grimac.api.packet.types.RecievablePacket;
 
 public interface ClientStatusPacket extends RecievablePacket {
-    Action getAction();
+    Action getClientStatusAction();
 
     enum Action {
         PERFORM_RESPAWN,
