@@ -98,4 +98,10 @@ public interface GrimUser extends ConfigReloadable, BasicReloadable, UserHandler
 
     @ApiStatus.Experimental @ApiStatus.Internal
     void onEndOfTick();
+
+    double getX();
+
+    double getY();
+
+    double getZ();
 }
