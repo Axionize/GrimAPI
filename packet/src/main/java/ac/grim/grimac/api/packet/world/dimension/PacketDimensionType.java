@@ -11,4 +11,6 @@ public interface PacketDimensionType {
     int getMinY();
 
     int getHeight();
+
+    boolean isUltraWarm();
 }

@@ -31,4 +31,6 @@ public interface PacketUser {
     PacketConnectionState getPlayerDecoderState();
 
     PacketClientVersion getPlayerClientVersion();
+
+    int getTotalWorldHeight();
 }

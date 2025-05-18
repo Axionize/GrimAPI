@@ -14,7 +14,7 @@ public interface ClientClickWindowPacket extends RecievablePacket {
     int getWindowId();
 
     /**
-     * Added in 1.17, and not actually optional; Removed with 1.21.5, replaced with {@link #setHashedSlots(Map)}
+     * Added in 1.17, and not actually optional; Removed with 1.21.5, // TODO (Packet Rewrite) replaced with setHashedSlots(Map)
      */
     Optional<Map<Integer, PacketItemStack>> getSlots();
 

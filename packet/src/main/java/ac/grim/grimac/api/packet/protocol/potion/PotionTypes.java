@@ -221,14 +221,14 @@ public final class PotionTypes {
      * Its primary function changed in 1.20.5, with more specific omen variants like
      * {@code RAID_OMEN} and {@code TRIAL_OMEN} introduced for distinct behaviors.
      * <br>Identifier: {@code minecraft:bad_omen}
-     * <br>Added in 1.14 (Village & Pillage).
+     * <br>Added in 1.14 (Village &amp; Pillage).
      */
     public static final PotionType BAD_OMEN = getPotionTypeByKey("bad_omen");
     /**
      * Grants discounted trades with villagers and causes them to gift items to the player
      * after successfully defending a village from a raid.
      * <br>Identifier: {@code minecraft:hero_of_the_village}
-     * <br>Added in 1.14 (Village & Pillage).
+     * <br>Added in 1.14 (Village &amp; Pillage).
      */
     public static final PotionType HERO_OF_THE_VILLAGE = getPotionTypeByKey("hero_of_the_village");
 

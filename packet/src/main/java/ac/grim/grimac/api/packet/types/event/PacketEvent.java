@@ -17,4 +17,7 @@ public interface PacketEvent {
     void setLastUsedWrapper(Object o);
 
     void markForReEncode(boolean shouldReEncode);
+
+    // TODO Stop relying on (Bytebuf) from this
+    Object getByteBuf();
 }
