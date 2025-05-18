@@ -1,7 +1,6 @@
 package ac.grim.grimac.api.packet.manager;
 
 import ac.grim.grimac.api.packet.types.PacketType;
-import com.github.retrooper.packetevents.protocol.packettype.PacketTypeCommon;
 
 public interface PacketTypeFactory {
     PacketType getHandshakingC2SPacketTypeByString(String packetIdentifier);

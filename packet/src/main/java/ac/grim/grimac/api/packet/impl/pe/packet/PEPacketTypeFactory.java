@@ -2,23 +2,22 @@ package ac.grim.grimac.api.packet.impl.pe.packet;
 
 import ac.grim.grimac.api.packet.manager.PacketTypeFactory;
 import com.github.retrooper.packetevents.protocol.packettype.PacketType;
-import com.github.retrooper.packetevents.protocol.packettype.PacketTypeCommon;
 
 import java.util.IdentityHashMap;
 import java.util.Map;
 
 public class PEPacketTypeFactory implements PacketTypeFactory {
 
-    private final Map<String, PacketTypeCommon> handshakeC2SMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> handshakeS2CMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> statusC2SMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> statusS2CMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> loginC2SMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> loginS2CMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> configC2SMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> configS2CMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> playC2SMap = new IdentityHashMap<>();
-    private final Map<String, PacketTypeCommon> playS2CMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> handshakeC2SMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> handshakeS2CMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> statusC2SMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> statusS2CMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> loginC2SMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> loginS2CMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> configC2SMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> configS2CMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> playC2SMap = new IdentityHashMap<>();
+    private final Map<String, ac.grim.grimac.api.packet.types.PacketType> playS2CMap = new IdentityHashMap<>();
 
     public PEPacketTypeFactory() {
         initHandshakeC2S();
@@ -393,52 +392,52 @@ public class PEPacketTypeFactory implements PacketTypeFactory {
     }
 
     @Override
-    public PacketTypeCommon getHandshakingC2SPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getHandshakingC2SPacketTypeByString(String packetIdentifier) {
         return handshakeC2SMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getHandshakingS2CPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getHandshakingS2CPacketTypeByString(String packetIdentifier) {
         return handshakeS2CMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getStatusC2SPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getStatusC2SPacketTypeByString(String packetIdentifier) {
         return statusC2SMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getStatusS2CPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getStatusS2CPacketTypeByString(String packetIdentifier) {
         return statusS2CMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getLoginC2SPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getLoginC2SPacketTypeByString(String packetIdentifier) {
         return loginC2SMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getLoginS2CPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getLoginS2CPacketTypeByString(String packetIdentifier) {
         return loginS2CMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getConfigurationC2SPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getConfigurationC2SPacketTypeByString(String packetIdentifier) {
         return configC2SMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getConfigurationS2CPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getConfigurationS2CPacketTypeByString(String packetIdentifier) {
         return configS2CMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getPlayC2SPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getPlayC2SPacketTypeByString(String packetIdentifier) {
         return playC2SMap.get(packetIdentifier);
     }
 
     @Override
-    public PacketTypeCommon getPlayS2CPacketTypeByString(String packetIdentifier) {
+    public ac.grim.grimac.api.packet.types.PacketType getPlayS2CPacketTypeByString(String packetIdentifier) {
         return playS2CMap.get(packetIdentifier);
     }
 }

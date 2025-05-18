@@ -3,6 +3,7 @@ package ac.grim.grimac.api.packet.player;
 import ac.grim.grimac.api.packet.protocol.PacketClientVersion;
 import ac.grim.grimac.api.packet.protocol.PacketClientVersions;
 import ac.grim.grimac.api.packet.protocol.PacketConnectionState;
+import ac.grim.grimac.api.packet.types.Packet;
 import ac.grim.grimac.api.packet.types.SendablePacket;
 import net.kyori.adventure.text.Component;
 
@@ -19,7 +20,7 @@ public interface PacketUser {
 
     Object getChannel();
 
-    void writePacket(SendablePacket packet);
+    void writePacket(Packet packet);
 
     void sendMessage(Component component);
 

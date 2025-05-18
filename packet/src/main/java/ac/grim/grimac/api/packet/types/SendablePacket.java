@@ -1,4 +1,4 @@
 package ac.grim.grimac.api.packet.types;
 
-public interface SendablePacket {
+public interface SendablePacket extends Packet {
 }

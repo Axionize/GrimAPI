@@ -3,7 +3,7 @@ package ac.grim.grimac.api.packet.types.client.play;
 import ac.grim.grimac.api.packet.types.RecievablePacket;
 
 public interface ClientEntityActionPacket extends RecievablePacket {
-    Action action();
+    Action getAction();
 
     enum Action {
         START_SNEAKING,
