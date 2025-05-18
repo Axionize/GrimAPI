@@ -5,4 +5,8 @@ public enum GameMode {
     CREATIVE,
     ADVENTURE,
     SPECTATOR;
+
+    public int getId() {
+        return ordinal();
+    }
 }

@@ -5,6 +5,10 @@ import ac.grim.grimac.api.packet.types.RecievablePacket;
 public interface ClientEntityActionPacket extends RecievablePacket {
     Action getAction();
 
+    int getJumpBoost();
+
+    int getEntityId();
+
     enum Action {
         START_SNEAKING,
         STOP_SNEAKING,

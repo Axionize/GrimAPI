@@ -6,4 +6,8 @@ import ac.grim.grimac.api.packet.types.RecievablePacket;
 public interface ClientPlayerUseItemPacket extends RecievablePacket {
     InteractionHand getHand();
     int getSequence();
+
+    float getYaw();
+
+    float getPitch();
 }

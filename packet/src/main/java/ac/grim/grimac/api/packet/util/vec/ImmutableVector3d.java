@@ -13,4 +13,8 @@ public interface ImmutableVector3d extends Vector3d {
     ImmutableVector3d withZ(double z);
 
     ImmutableVector3d subtract(ImmutableVector3d start);
+
+    ImmutableVector3d subtract(double x, double y, double z);
+
+    ImmutableVector3i toVector3i();
 }
