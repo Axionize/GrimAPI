@@ -1,6 +1,6 @@
 package ac.grim.grimac.api.packet.util.vec;
 
-import ac.grim.grimac.api.packet.protocol.version.server.ServerVersion;
+import ac.grim.grimac.api.packet.protocol.version.server.PacketServerVersion;
 import ac.grim.grimac.api.packet.protocol.version.server.ServerVersions;
 
 public interface Vector3i {
@@ -8,7 +8,7 @@ public interface Vector3i {
     int getY();
     int getZ();
 
-    default long getSerializedPosition(ServerVersion serverVersion) {
+    default long getSerializedPosition(PacketServerVersion serverVersion) {
         // 1.17 adds support for negative values
         if (serverVersion.isNewerThanOrEquals(ServerVersions.V_1_17)) {
             long x = getX() & 0x3FFFFFF;

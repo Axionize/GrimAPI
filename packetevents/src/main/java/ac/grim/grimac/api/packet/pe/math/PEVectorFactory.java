@@ -1,4 +1,4 @@
-package ac.grim.grimac.api.packet.impl.pe.math;
+package ac.grim.grimac.api.packet.pe.math;
 
 import ac.grim.grimac.api.packet.manager.VectorFactory;
 import ac.grim.grimac.api.packet.util.vec.ImmutableVector3d;

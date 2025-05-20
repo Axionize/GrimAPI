@@ -1,4 +1,4 @@
-package ac.grim.grimac.api.packet.impl.pe.packet;
+package ac.grim.grimac.api.packet.pe.packet;
 
 import ac.grim.grimac.api.packet.manager.PacketTypeFactory;
 import com.github.retrooper.packetevents.protocol.packettype.PacketType;

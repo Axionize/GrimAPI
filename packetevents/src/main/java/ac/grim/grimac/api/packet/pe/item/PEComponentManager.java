@@ -1,4 +1,4 @@
-package ac.grim.grimac.api.packet.impl.pe.item;
+package ac.grim.grimac.api.packet.pe.item;
 
 import ac.grim.grimac.api.packet.component.PacketComponentType;
 import ac.grim.grimac.api.packet.manager.PacketComponentManager;

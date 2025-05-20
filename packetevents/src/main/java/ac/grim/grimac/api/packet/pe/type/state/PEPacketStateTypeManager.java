@@ -1,4 +1,4 @@
-package ac.grim.grimac.api.packet.impl.pe.type.state;
+package ac.grim.grimac.api.packet.pe.type.state;
 
 import ac.grim.grimac.api.packet.item.PacketStateType;
 import ac.grim.grimac.api.packet.manager.PacketStateTypeManager;

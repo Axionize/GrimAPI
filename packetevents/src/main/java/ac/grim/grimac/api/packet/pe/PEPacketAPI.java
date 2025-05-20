@@ -1,14 +1,14 @@
-package ac.grim.grimac.api.packet.impl.pe;
+package ac.grim.grimac.api.packet.pe;
 
 import ac.grim.grimac.api.packet.MCPacketAPI;
 import ac.grim.grimac.api.packet.entity.PacketEntityManager;
-import ac.grim.grimac.api.packet.impl.pe.entity.PEEntityManager;
-import ac.grim.grimac.api.packet.impl.pe.item.PEItemManager;
-import ac.grim.grimac.api.packet.impl.pe.math.PEVectorFactory;
-import ac.grim.grimac.api.packet.impl.pe.packet.PEPacketTypeFactory;
-import ac.grim.grimac.api.packet.impl.pe.type.block.PEPacketBlockStateManager;
-import ac.grim.grimac.api.packet.impl.pe.type.state.PEPacketStateTypeManager;
-import ac.grim.grimac.api.packet.impl.pe.version.PEPacketVersionManager;
+import ac.grim.grimac.api.packet.pe.entity.PEEntityManager;
+import ac.grim.grimac.api.packet.pe.item.PEItemManager;
+import ac.grim.grimac.api.packet.pe.math.PEVectorFactory;
+import ac.grim.grimac.api.packet.pe.packet.PEPacketTypeFactory;
+import ac.grim.grimac.api.packet.pe.type.block.PEPacketBlockStateManager;
+import ac.grim.grimac.api.packet.pe.type.state.PEPacketStateTypeManager;
+import ac.grim.grimac.api.packet.pe.version.PEPacketVersionManager;
 import ac.grim.grimac.api.packet.manager.*;
 import ac.grim.grimac.api.packet.types.PacketWrapperFactory;
 import ac.grim.grimac.api.packet.version.VersionManager;

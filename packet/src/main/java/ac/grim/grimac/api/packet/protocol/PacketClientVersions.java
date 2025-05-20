@@ -39,10 +39,10 @@ public class PacketClientVersions {
     public static final PacketClientVersion V_1_21_5 = getById(770);
 
     public static PacketClientVersion getByString(String versionName) {
-        return MCPacket.getAPI().getVersionManager().getByString(versionName);
+        return MCPacket.getAPI().getVersionManager().getClientVersionByString(versionName);
     }
 
     public static PacketClientVersion getById(int protocolVersion) {
-        return MCPacket.getAPI().getVersionManager().getById(protocolVersion);
+        return MCPacket.getAPI().getVersionManager().getClientVersionById(protocolVersion);
     }
 }

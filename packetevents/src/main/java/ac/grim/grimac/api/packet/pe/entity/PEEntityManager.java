@@ -1,4 +1,4 @@
-package ac.grim.grimac.api.packet.impl.pe.entity;
+package ac.grim.grimac.api.packet.pe.entity;
 
 import ac.grim.grimac.api.packet.entity.PacketEntityManager;
 import ac.grim.grimac.api.packet.entity.PacketEntityType;
